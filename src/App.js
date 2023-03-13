@@ -1,8 +1,14 @@
-import logo from './logo.svg'
+import { createContext } from 'react'
 import './App.css'
 
-function App() {
-  return <div className="App">Masło masło masło masło masło</div>
+const App = () => {
+  const AppContext = createContext()
+
+  return (
+    <AppContext.Provider value={{}}>
+      <div className="App">Masło masło masło masło masło</div>
+    </AppContext.Provider>
+  )
 }
 
 export default App
